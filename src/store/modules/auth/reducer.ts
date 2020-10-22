@@ -1,4 +1,4 @@
-import { AnyAction } from "redux";
+// import { AnyAction } from "redux";
 import { AuthAction, AuthState } from "./types";
 
 const initialState: AuthState = {

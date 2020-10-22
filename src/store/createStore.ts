@@ -3,7 +3,6 @@ import { AuthAction, AuthState } from "./modules/auth/types";
 
 export interface StoreState {
   auth: AuthState;
-
 }
 
 export type StoreAction = AuthAction;
