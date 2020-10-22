@@ -6,11 +6,14 @@ import { signInRequest } from '../../store/modules/auth/actions';
 import { StoreState } from '../../store/createStore';
 
 const SignIn: React.FC = () => {
-  const { loadingSignInRequest } = useSelector((state: StoreState) => state.auth)
+  const { loadingSignInRequest, isSignedIn, error, token } = useSelector((state: StoreState) => state.auth)
   // console.log(loadingSignInRequest);
   const dispatch = useDispatch();
 
   console.log('LOADING: ', loadingSignInRequest);
+  console.log('SIGNED: ', isSignedIn);
+  console.log('ERROR: ', error);
+  console.log('TOKEN: ', token);
 
   return (
     <div className="sign-in-page">
